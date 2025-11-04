@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #1e1e1e;
+  background-color: #0C2B4E;
   padding: 10px 20px;
 }
 
@@ -40,7 +40,7 @@ main {
 }
 
 .hero {
-  background: url('../img/kuca1.jpg') center/cover;
+  background: url('../img/background.jpg') center/cover;
   color: white;
   padding: 100px 20px;
   text-align: center;
@@ -64,7 +64,7 @@ form {
 }
 
 footer {
-  background-color: #1e1e1e;
+  background-color: #0C2B4E;
   color: #fff;
   text-align: center;
   padding: 15px;
