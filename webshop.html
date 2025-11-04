@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3DHome | Webshop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="img/logo.png" alt="3DHome Logo" class="logo">
+      <ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="webshop.html" class="active">Webshop</a></li>
+        <li><a href="faq.html">Česta pitanja</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Konfigurator 3D kuće</h1>
+    <p>Odaberite osnovne opcije vaše 3D printane kuće:</p>
+
+    <form id="configForm">
+      <label>Tlocrt:</label>
+      <select id="tlocrt">
+        <option value="50000">Jednokatnica (50m²)</option>
+        <option value="80000">Dvokatnica (100m²)</option>
+        <option value="120000">Velika kuća (150m²)</option>
+      </select>
+
+      <label>Vrsta krova:</label>
+      <select id="krov">
+        <option value="5000">Ravni</option>
+        <option value="8000">Dvoslivni</option>
+        <option value="12000">Moderni</option>
+      </select>
+
+      <label>Veličina prozora:</label>
+      <select id="prozori">
+        <option value="2000">Mali</option>
+        <option value="4000">Srednji</option>
+        <option value="6000">Veliki</option>
+      </select>
+
+      <button type="button" onclick="izracunaj()">Izračunaj cijenu</button>
+    </form>
+
+    <div id="rezultat"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 3DHome Solutions</p>
+  </footer>
+
+  <script>
+    function izracunaj() {
+      const tlocrt = parseInt(document.getElementById("tlocrt").value);
+      const krov = parseInt(document.getElementById("krov").value);
+      const prozori = parseInt(document.getElementById("prozori").value);
+
+      const ukupno = tlocrt + krov + prozori;
+      document.getElementById("rezultat").innerHTML =
+        "<h3>Procijenjena cijena vaše kuće: " + ukupno.toLocaleString() + " €</h3>";
+    }
+  </script>
+</body>
+</html>
