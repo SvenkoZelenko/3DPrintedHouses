@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3DHome | Početna</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="js/nav.js" defer></script>
 </head>
 <body>
   <header>
     <nav>
       <img src="img/logo.png" alt="3DHome Logo" class="logo">
+      <button class="hamburger" aria-label="Menu">☰</button>
+      <!-- Dark overlay -->
+      <div class="overlay"></div>
       <ul>
-        <li><a href="index.html" class="active">Početna</a></li>
+        <button class="close-menu" aria-label="Close menu">✕</button>
+        <li><a href="index.html">Početna</a></li>
         <li><a href="webshop.html">Webshop</a></li>
         <li><a href="faq.html">Česta pitanja</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
@@ -28,7 +36,8 @@
 
     <section class="info">
       <h2>Što su 3D printane kuće?</h2>
-      <p>3D printane kuće izrađuju se pomoću specijalnih građevinskih printera koji sloj po sloj ispisuju konstrukciju kuće od betonske smjese ili drugih materijala.</p>
+      <p>3D printane kuće izrađuju se pomoću specijalnih građevinskih printera koji sloj po sloj ispisuju konstrukciju
+        kuće od betonske smjese ili drugih materijala.</p>
 
       <h3>Prednosti</h3>
       <ul>
@@ -49,4 +58,5 @@
     <p>© 2025 3DHome Solutions | Projekt izrade web stranice</p>
   </footer>
 </body>
+
 </html>
