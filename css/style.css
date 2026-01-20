@@ -212,6 +212,10 @@ form {
   cursor: pointer;
 }
 
+.close-menu {
+  display: none;
+}
+
 @media (max-width: 768px) {
 
   .hamburger {
@@ -251,6 +255,7 @@ form {
     position: absolute;
     top: 20px;
     right: 20px;
+    display: block;
 
     font-size: 24px;
     color: white;
@@ -397,4 +402,9 @@ form {
   color: #fff;
   cursor: pointer;
   user-select: none;
+}
+
+.page-title,
+.page-subtitle {
+  text-align: center;
 }
