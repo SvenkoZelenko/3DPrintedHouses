@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DHome | Početna</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="js/nav.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="img/logo.png" alt="3DHome Logo" class="logo">
+            <button class="hamburger" aria-label="Menu">☰</button>
+            <!-- Dark overlay -->
+            <div class="overlay"></div>
+            <ul>
+                <button class="close-menu" aria-label="Close menu">✕</button>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="webshop.html">Webshop</a></li>
+                <li><a href="faq.html">Česta pitanja</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style = "align-items: center; color: #0C2B4E">Naši projekti</h1>
+        <h2 style = "align-items: center; font-weight: bold;">Kroz naše mnoge godine postojanja, gradili smo kuće za kupce sa raznim ukusima</h2>
+        <section class="photo-grid">
+            <div class="grid-item">
+                <img src="img/photo1.jpg" class="grid-img" alt="Photo 1"
+                    data-review="Moderna kuća s velikim prozorima i prirodnim osvjetljenjem.">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo2.jpg" alt="Photo 2" class="grid-img">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo3.jpg" alt="Photo 3" class="grid-img">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo4.jpg" alt="Photo 4" class="grid-img">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo5.jpg" alt="Photo 5" class="grid-img">
+            </div>
+            <div class="grid-item">
+                <img src="img/photo6.jpg" alt="Photo 6" class="grid-img">
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2025 3DHome Solutions</p>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+        <span class="close-modal" id="closeModal">✕</span>
+
+        <!-- IMAGE -->
+        <img id="modalImage" src="" alt="Expanded image">
+
+        <!-- TEXT BELOW IMAGE -->
+        <div class="image-review">
+            <p id="modalReview"></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
